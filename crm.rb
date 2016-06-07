@@ -66,9 +66,13 @@ class CRM
     #
     puts "What is the ID of the contact?"
     id_argument = gets.chomp!
+    puts "Which attribute do you want up update? (first, last, email or note)"
+    att_update = gets.chomp!
+    puts "What is the new value"
+    att_value = gets.chomp!
 
     var1 = Contact.find(id_argument) #assign the nameless instance a name
-    puts var1.update
+    puts var1.update(att_update, att_value)
 
 
   end
@@ -99,7 +103,7 @@ class CRM
 
     # HINT: Make use of the display_contacts method to keep your code DRY
     return Contact.all
-    
+
 
   end
 

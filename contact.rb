@@ -110,12 +110,12 @@ class Contact
   # 1. which of the contact's attributes you want to update
   # 2. the new value for that attribute
   # and then make the appropriate change to the contact
-  def update
+  def update(att_update, att_value)
 
-    puts "Which attribute do you want up update? (first, last, email or note)"
-    att_update = gets.chomp!
-    puts "What is the new value"
-    att_value = gets.chomp!
+    # puts "Which attribute do you want up update? (first, last, email or note)"
+    # att_update = gets.chomp!
+    # puts "What is the new value"
+    # att_value = gets.chomp!
 
     if att_update == "first"
       @first_name = att_value
