@@ -153,8 +153,11 @@ class Contact
     delete_var = delete_id.to_i #do i need to do this? who knows...
     @@contacts.each do |item| #iterate over each instance of contact in the master array
         if item.id == delete_var #compare user input id num with the id in each instance
-          puts @@contacts.index
+          temp_var = @@contacts.index
+          @@contact.delete_at(temp_var)
         end
+
+        puts "#{temp_var}"
 
 
 
