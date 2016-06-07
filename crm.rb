@@ -90,6 +90,8 @@ class CRM
   def display_contacts
 
     # HINT: Make use of this method in the display_all_contacts and search_by_attribute methods to keep your code DRY
+
+
   end
 
   def display_all_contacts
@@ -102,6 +104,8 @@ class CRM
   def search_by_attribute
 
     # HINT: Make use of the display_contacts method to keep your code DRY
+
+
   end
 
   # Add other methods here, if you need them.
