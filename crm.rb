@@ -76,6 +76,7 @@ class CRM
 
     puts "What is the ID number of the contact you want to delete?"
     delete_id = gets.chomp!
+
     delete_var = Contact.find(delete_id)
     puts delete_var(delete_id)
 
