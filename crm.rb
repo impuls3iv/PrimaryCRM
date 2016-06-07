@@ -5,6 +5,7 @@ class CRM
   attr_accessor :name
 
   def initialize(name)
+    binding.pry
     puts "Okay, this CRM has the name " + name
     @name = name
   end
@@ -86,13 +87,13 @@ class CRM
   end
 
   # This method should accept as an argument an array of contacts
-  # and display each contact in that array
-  def display_contacts
-
-    # HINT: Make use of this method in the display_all_contacts and search_by_attribute methods to keep your code DRY
-
-
-  end
+  # # and display each contact in that array
+  # def display_contacts
+  #
+  #   # HINT: Make use of this method in the display_all_contacts and search_by_attribute methods to keep your code DRY
+  #
+  #
+  # end
 
   def display_all_contacts
 

@@ -28,12 +28,14 @@ class Contact
   # This method should return all of the existing contacts
   def self.all
 
-    puts "................"
+
     #iterated thru @@contact and prints info in each instance
-    @@contacts.each do |all_names|
-      puts "First name: #{all_names.first_name}, Last name: #{all_names.last_name}, Email: #{all_names.email}, Notes: #{all_names.note}, ID: #{all_names.id} "
-    end
-    puts "................"
+    return @@contacts
+    # @@contacts.each do |all_names|
+    #   return
+    #    "First name: #{all_names.first_name}, Last name: #{all_names.last_name}, Email: #{all_names.email}, Notes: #{all_names.note}, ID: #{all_names.id} "
+    # end
+    #
   end
 
   # This method should accept an id as an argument
