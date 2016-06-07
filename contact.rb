@@ -30,11 +30,10 @@ class Contact
 
 
     #iterated thru @@contact and prints info in each instance
-    return @@contacts
-    # @@contacts.each do |all_names|
-    #   return
-    #    "First name: #{all_names.first_name}, Last name: #{all_names.last_name}, Email: #{all_names.email}, Notes: #{all_names.note}, ID: #{all_names.id} "
-    # end
+    #return @@contacts
+     @@contacts.each do |all_names|
+       puts "First name: #{all_names.first_name}, Last name: #{all_names.last_name}, Email: #{all_names.email}, Notes: #{all_names.note}, ID: #{all_names.id} "
+     end
     #
   end
 
@@ -74,8 +73,8 @@ class Contact
     if att_find_by == "first"
       @@contacts.each do |findby|
         if findby.first_name == val_find_by
-          return findby
-          #return "ID: #{findby.id} Contains first name #{findby.first_name}, last name #{findby.last_name}, email #{findby.email}, note: #{findby.note}"
+          #return findby
+          return "ID: #{findby.id} Contains first name #{findby.first_name}, last name #{findby.last_name}, email #{findby.email}, note: #{findby.note}"
         end
       end
 

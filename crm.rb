@@ -99,6 +99,7 @@ class CRM
 
     # HINT: Make use of the display_contacts method to keep your code DRY
     return Contact.all
+    
 
   end
 
