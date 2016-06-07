@@ -5,7 +5,7 @@ class CRM
   attr_accessor :name
 
   def initialize(name)
-    binding.pry
+    #binding.pry
     puts "Okay, this CRM has the name " + name
     @name = name
   end

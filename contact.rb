@@ -74,7 +74,8 @@ class Contact
     if att_find_by == "first"
       @@contacts.each do |findby|
         if findby.first_name == val_find_by
-          return "ID: #{findby.id} Contains first name #{findby.first_name}, last name #{findby.last_name}, email #{findby.email}, note: #{findby.note}"
+          #return "ID: #{findby.id} Contains first name #{findby.first_name}, last name #{findby.last_name}, email #{findby.email}, note: #{findby.note}"
+          return findby #--> for error testing
         end
       end
 
