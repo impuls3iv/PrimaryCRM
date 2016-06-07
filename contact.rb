@@ -148,16 +148,16 @@ class Contact
 
   # This method should delete the contact
   # HINT: Check the Array class docs for built-in methods that might be useful here
-  def delete(delete_id)
+  def self.delete(delete_id)
 
     delete_var = delete_id.to_i #do i need to do this? who knows...
     @@contacts.each do |item| #iterate over each instance of contact in the master array
-        if item.id == delete_var #compare user input id num with the id in each instance
-          temp_var = @@contacts.index
-          @@contact.delete_at(temp_var)
+        if item.id == delete_var #cif there is an item id thats the same as user inputted delete_var
+          temp_var = @@contacts.index(item) #save the index number of the @@contact instance with the id
+          @@contacts.delete_at(temp_var) #and delete the array item at that index number
         end
 
-        puts "#{temp_var}"
+        # puts "#{temp_var}"
 
 
 

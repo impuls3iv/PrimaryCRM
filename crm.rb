@@ -77,8 +77,11 @@ class CRM
     puts "What is the ID number of the contact you want to delete?"
     delete_id = gets.chomp!
 
-    delete_var = Contact.find(delete_id)
-    puts delete_var(delete_id)
+    Contact.delete(delete_id)
+
+    # delete_var = Contact.find(delete_id) #delete_var holds the object instance of class with the ID in delete_id
+    # puts "#{delete_var}"
+    # Contact.delete(de)
 
   end
 
@@ -92,6 +95,8 @@ class CRM
   def display_all_contacts
 
     # HINT: Make use of the display_contacts method to keep your code DRY
+    return Contact.all
+
   end
 
   def search_by_attribute
@@ -102,3 +107,6 @@ class CRM
   # Add other methods here, if you need them.
 
 end
+
+crm = CRM.new("crm")
+crm.main_menu
