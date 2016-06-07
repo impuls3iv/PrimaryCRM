@@ -104,7 +104,13 @@ class CRM
   def search_by_attribute
 
     # HINT: Make use of the display_contacts method to keep your code DRY
+    #get user input
+    puts "Do you want to search by first name (first), last name (last), email (email), or notes (note)?"
+    att_find_by = gets.chomp!
+    puts "What is the value of that attribute? (jon? sam@email.com? \'cool dude\'?)"
+    val_find_by = gets.chomp!
 
+    puts Contact.find_by(att_find_by, val_find_by)
 
   end
 

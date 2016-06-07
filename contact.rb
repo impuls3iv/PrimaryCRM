@@ -60,13 +60,13 @@ class Contact
   # but it should allow you to search for a contact using attributes other than id
   # by specifying both the name of the attribute and the value
   # eg. searching for 'first_name', 'Betty' should return the first contact named Betty
-  def self.find_by
+  def self.find_by(att_find_by, val_find_by)
 
-    #get user input
-    puts "Do you want to search by first name (first), last name (last), email (email), or notes (note)?"
-    att_find_by = gets.chomp!
-    puts "What is the value of that attribute? (jon? sam@email.com? \'cool dude\'?)"
-    val_find_by = gets.chomp!
+    # #get user input
+    # puts "Do you want to search by first name (first), last name (last), email (email), or notes (note)?"
+    # att_find_by = gets.chomp!
+    # puts "What is the value of that attribute? (jon? sam@email.com? \'cool dude\'?)"
+    # val_find_by = gets.chomp!
 
     #find the value
     if att_find_by == "first"
