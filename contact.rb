@@ -74,8 +74,8 @@ class Contact
     if att_find_by == "first"
       @@contacts.each do |findby|
         if findby.first_name == val_find_by
+          return findby
           #return "ID: #{findby.id} Contains first name #{findby.first_name}, last name #{findby.last_name}, email #{findby.email}, note: #{findby.note}"
-          return findby #--> for error testing
         end
       end
 
@@ -145,7 +145,8 @@ class Contact
 
   def full_name
 
-    "The contacts full name is: #{@first_name} #{@last_name}"
+    #return @contact
+    return "#{@first_name} #{@last_name}"
 
   end
 
